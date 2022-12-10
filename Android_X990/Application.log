@@ -1,35 +1,20 @@
-[Android_X990 INFO ] 2022-12-07 23:26:17.747 ServerManager:20 - starting appium server
-[Android_X990 INFO ] 2022-12-07 23:27:08.663 ServerManager:29 - Appium server started
-[Android_X990 INFO ] 2022-12-07 23:27:08.806 DriverManager:46 - initializing Appium driver
-[Android_X990 INFO ] 2022-12-07 23:27:08.934 PropertyManager:17 - loading config properties
-[Android_X990 INFO ] 2022-12-07 23:27:08.937 CapabilitiesManager:18 - getting capabilities
-[Android_X990 INFO ] 2022-12-07 23:27:08.984 CapabilitiesManager:34 - appUrl isE:\appium1\appium-cucumberbdd-master\src\test\resources\apps\Android.SauceLabs.Mobile.Sample.app.2.2.1.apk
-[Android_X990 INFO ] 2022-12-07 23:28:02.371 DriverManager:58 - Driver is initialized
-[Android_X990 INFO ] 2022-12-07 23:28:06.719 BasePage:71 - login with invalidUsername
-[Android_X990 INFO ] 2022-12-07 23:28:08.662 BasePage:71 - password is secret_sauce
-[Android_X990 INFO ] 2022-12-07 23:28:09.937 BasePage:53 - press login button
-[Android_X990 INFO ] 2022-12-07 23:28:11.640 BasePage:97 - error text is - Username and password do not match any user in this service.
-[Android_X990 INFO ] 2022-12-07 23:28:17.022 VideoManager:35 - video path: Android_X990\Videos\Login with invalid user name.mp4
-[Android_X990 INFO ] 2022-12-07 23:28:18.890 ServerManager:20 - starting appium server
-[Android_X990 INFO ] 2022-12-07 23:28:57.190 ServerManager:29 - Appium server started
-[Android_X990 INFO ] 2022-12-07 23:28:57.191 DriverManager:46 - initializing Appium driver
-[Android_X990 INFO ] 2022-12-07 23:28:57.192 CapabilitiesManager:18 - getting capabilities
-[Android_X990 INFO ] 2022-12-07 23:28:57.192 CapabilitiesManager:34 - appUrl isE:\appium1\appium-cucumberbdd-master\src\test\resources\apps\Android.SauceLabs.Mobile.Sample.app.2.2.1.apk
-[Android_X990 INFO ] 2022-12-07 23:29:33.926 DriverManager:58 - Driver is initialized
-[Android_X990 INFO ] 2022-12-07 23:29:38.485 BasePage:71 - login with standard_user
-[Android_X990 INFO ] 2022-12-07 23:29:40.466 BasePage:71 - password is invalidPassword
-[Android_X990 INFO ] 2022-12-07 23:29:41.786 BasePage:53 - press login button
-[Android_X990 INFO ] 2022-12-07 23:29:43.416 BasePage:97 - error text is - Username and password do not match any user in this service.
-[Android_X990 INFO ] 2022-12-07 23:29:46.671 VideoManager:35 - video path: Android_X990\Videos\Login with invalid password.mp4
-[Android_X990 INFO ] 2022-12-07 23:29:48.533 ServerManager:20 - starting appium server
-[Android_X990 INFO ] 2022-12-07 23:30:30.528 ServerManager:29 - Appium server started
-[Android_X990 INFO ] 2022-12-07 23:30:30.528 DriverManager:46 - initializing Appium driver
-[Android_X990 INFO ] 2022-12-07 23:30:30.529 CapabilitiesManager:18 - getting capabilities
-[Android_X990 INFO ] 2022-12-07 23:30:30.529 CapabilitiesManager:34 - appUrl isE:\appium1\appium-cucumberbdd-master\src\test\resources\apps\Android.SauceLabs.Mobile.Sample.app.2.2.1.apk
-[Android_X990 INFO ] 2022-12-07 23:31:00.155 DriverManager:58 - Driver is initialized
-[Android_X990 INFO ] 2022-12-07 23:31:04.711 BasePage:71 - login with standard_user
-[Android_X990 INFO ] 2022-12-07 23:31:06.665 BasePage:71 - password is secret_sauce
-[Android_X990 INFO ] 2022-12-07 23:31:07.489 BasePage:53 - press login button
-[Android_X990 INFO ] 2022-12-07 23:31:10.878 BasePage:97 - product page title is - PRODUCTS
-[Android_X990 INFO ] 2022-12-07 23:31:15.526 VideoManager:35 - video path: Android_X990\Videos\Login with valid user name and password.mp4
-[Android_X990 INFO ] 2022-12-07 23:32:34.193 WebBasePage:29 - enter submit
+[Android_X990 INFO ] 2022-12-10 02:54:20.846 ServerManager:20 - starting appium server
+[Android_X990 INFO ] 2022-12-10 02:56:27.556 ServerManager:29 - Appium server started
+[Android_X990 INFO ] 2022-12-10 02:56:29.183 DriverManager:46 - initializing Appium driver
+[Android_X990 INFO ] 2022-12-10 02:56:29.387 PropertyManager:17 - loading config properties
+[Android_X990 INFO ] 2022-12-10 02:56:30.249 CapabilitiesManager:18 - getting capabilities
+[Android_X990 INFO ] 2022-12-10 02:56:30.253 CapabilitiesManager:34 - appUrl isE:\appium1\appium-cucumberbdd-master\src\test\resources\apps\Android.SauceLabs.Mobile.Sample.app.2.2.1.apk
+[Android_X990 INFO ] 2022-12-10 02:58:18.070 DriverManager:58 - Driver is initialized
+[Android_X990 INFO ] 2022-12-10 02:58:23.840 BasePage:71 - login with invalidUsername
+[Android_X990 INFO ] 2022-12-10 02:58:25.913 BasePage:71 - password is secret_sauce
+[Android_X990 INFO ] 2022-12-10 02:58:27.140 BasePage:53 - press login button
+[Android_X990 INFO ] 2022-12-10 02:58:29.510 BasePage:97 - error text is - Username and password do not match any user in this service.
+[Android_X990 INFO ] 2022-12-10 02:58:37.762 VideoManager:35 - video path: Android_X990\Videos\Login with invalid user name.mp4
+[Android_X990 INFO ] 2022-12-10 02:58:39.799 ServerManager:20 - starting appium server
+[Android_X990 INFO ] 2022-12-10 02:59:23.702 ServerManager:29 - Appium server started
+[Android_X990 INFO ] 2022-12-10 02:59:23.703 DriverManager:46 - initializing Appium driver
+[Android_X990 INFO ] 2022-12-10 02:59:23.704 CapabilitiesManager:18 - getting capabilities
+[Android_X990 INFO ] 2022-12-10 02:59:23.705 CapabilitiesManager:34 - appUrl isE:\appium1\appium-cucumberbdd-master\src\test\resources\apps\Android.SauceLabs.Mobile.Sample.app.2.2.1.apk
+[Android_X990 INFO ] 2022-12-10 03:00:07.987 DriverManager:58 - Driver is initialized
+[Android_X990 INFO ] 2022-12-10 03:00:12.552 ServerManager:20 - starting appium server
+[Android_X990 INFO ] 2022-12-10 03:03:26.857 WebBasePage:29 - enter submit

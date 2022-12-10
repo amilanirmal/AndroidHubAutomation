@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>07 Dec 2022, 23:33</td>
+      <td>10 Dec 2022, 03:04</td>
     </tr>
   </tbody>
 </table>
@@ -94,12 +94,815 @@ $(document).ready(function() {
 </div>
 
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
 <div class="container-fluid" id="report">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
 
-        <p>You have no failed scenarios in your Cucumber report</p>
+        <div class="elements">
 
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1033087730.html">Login scenarios</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2210145489.html">@test</a>
+       <a href="report-tag_1702080319.html">@appium</a>
+</div>
+
+
+  <span class="lead-duration duration">2.683</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Login with invalid password</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-2" class="inner-level collapse collapsable-details ">
+        <div class="hook">
+          <div class="brief passed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.qa.stepdef.Hooks.initialize()</span>
+
+  <span class="lead-duration duration">1:29.316</span>
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-When failed">
+  <span class="keyword indention">When</span>
+  <span class="name">I enter username as &quot;<span class="argument">standard_user</span>&quot;</span>
+
+  <span class="lead-duration duration">2.682</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>org.openqa.selenium.WebDriverException:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.WebDriverException: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-515LFDB', ip: '192.168.1.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: E:\appium1\appium-cucumberb..., appActivity: com.swaglabsmobileapp.Splas..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, chromeDriverPort: 11000, databaseEnabled: false, desired: {app: E:\appium1\appium-cucumberb..., appActivity: com.swaglabsmobileapp.Splas..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, chromeDriverPort: 11000, deviceName: X990, platformName: android, systemPort: 10000, udid: ee1e07a}, deviceApiLevel: 25, deviceManufacturer: unknown, deviceModel: X990, deviceName: ee1e07a, deviceScreenDensity: 320, deviceScreenSize: 720x1280, deviceUDID: ee1e07a, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 7.1.2, statBarHeight: 48, systemPort: 10000, takesScreenshot: true, udid: ee1e07a, viewportRect: {height: 1232, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: d01967e5-623e-441a-98bf-405ff1ca5556
+*** Element info: {Using=accessibility id, value=test-Username}
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:192)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:34)
+	at com.qa.pages.BasePage.clear(BasePage.java:42)
+	at com.qa.pages.LoginPage.enterUserName(LoginPage.java:31)
+	at com.qa.stepdef.LoginStepDef.iEnterUsernameAs(LoginStepDef.java:14)
+	at &#10045;.I enter username as &quot;standard_user&quot;(file:///E:/appium1/appium-cucumberbdd-master/src/test/resources/Login.feature:15)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-515LFDB', ip: '192.168.1.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: E:\appium1\appium-cucumberb..., appActivity: com.swaglabsmobileapp.Splas..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, chromeDriverPort: 11000, databaseEnabled: false, desired: {app: E:\appium1\appium-cucumberb..., appActivity: com.swaglabsmobileapp.Splas..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, chromeDriverPort: 11000, deviceName: X990, platformName: android, systemPort: 10000, udid: ee1e07a}, deviceApiLevel: 25, deviceManufacturer: unknown, deviceModel: X990, deviceName: ee1e07a, deviceScreenDensity: 320, deviceScreenSize: 720x1280, deviceUDID: ee1e07a, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 7.1.2, statBarHeight: 48, systemPort: 10000, takesScreenshot: true, udid: ee1e07a, viewportRect: {height: 1232, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: d01967e5-623e-441a-98bf-405ff1ca5556
+*** Element info: {Using=accessibility id, value=test-Username}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.lambda$0(ByChained.java:38)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:72)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at com.qa.pages.BasePage.waitForVisibility(BasePage.java:34)
+	at com.qa.pages.BasePage.clear(BasePage.java:42)
+	at com.qa.pages.LoginPage.enterUserName(LoginPage.java:31)
+	at com.qa.stepdef.LoginStepDef.iEnterUsernameAs(LoginStepDef.java:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter password as &quot;<span class="argument">invalidPassword</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I login</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">login should fail with an error &quot;<span class="argument">Username and password do not match any user in this service.</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-5">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-5" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief failed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.qa.stepdef.Hooks.quit1(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.273</span>
+
+          </div>
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>Error message</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-515LFDB', ip: '192.168.1.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: E:\appium1\appium-cucumberb..., appActivity: com.swaglabsmobileapp.Splas..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, chromeDriverPort: 11000, databaseEnabled: false, desired: {app: E:\appium1\appium-cucumberb..., appActivity: com.swaglabsmobileapp.Splas..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, chromeDriverPort: 11000, deviceName: X990, platformName: android, systemPort: 10000, udid: ee1e07a}, deviceApiLevel: 25, deviceManufacturer: unknown, deviceModel: X990, deviceName: ee1e07a, deviceScreenDensity: 320, deviceScreenSize: 720x1280, deviceUDID: ee1e07a, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 7.1.2, statBarHeight: 48, systemPort: 10000, takesScreenshot: true, udid: ee1e07a, viewportRect: {height: 1232, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: d01967e5-623e-441a-98bf-405ff1ca5556
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.qa.stepdef.Hooks.quit1(Hooks.java:42)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_1033087730.html">Login scenarios</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_2210145489.html">@test</a>
+       <a href="report-tag_1702080319.html">@appium</a>
+</div>
+
+
+  <span class="lead-duration duration">0.001</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-7">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Login with valid user name and password</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details  in ">
+
+
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-8">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-8" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief failed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.qa.stepdef.Hooks.initialize()</span>
+
+  <span class="lead-duration duration">2:19.373</span>
+
+          </div>
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-9">
+          <a>Error message</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details  in ">
+        <pre>io.appium.java_client.service.local.AppiumServerHasNotBeenStartedLocallyException: The local appium server has not been started. The given Node.js executable: C:\Program Files\nodejs\node.exe Arguments: [C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\build\lib\main.js, --port, 17644, --address, 0.0.0.0, --log, E:\appium1\appium-cucumberbdd-master\Android_X990\Server.log, --session-override] 
+Process output: [35m[Appium][39m Welcome to Appium v1.22.3
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   port: 17644
+[35m[Appium][39m   sessionOverride: true
+[35m[Appium][39m   logFile: E:\appium1\appium-cucumberbdd-master\Android_X990\Server.log
+uncaughtException: EPERM: operation not permitted, stat 'E:\appium1\appium-cucumberbdd-master\Android_X990\Server.log'
+Error: EPERM: operation not permitted, stat 'E:\appium1\appium-cucumberbdd-master\Android_X990\Server.log'
+C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:307
+      throw ex;
+      ^
+
+NodeError: write after end
+    at writeAfterEnd (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_writable.js:261:12)
+    at PassThrough.Writable.write (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_writable.js:305:21)
+    at File.log (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\file.js:185:34)
+    at File._write (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at File.Writable.write (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+    at DerivedLogger.Transform._read (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:177:10)
+    at DerivedLogger.Transform._write (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:164:83)
+Emitted 'error' event on PassThrough instance at:
+    at errorOrDestroy (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\internal\streams\destroy.js:98:101)
+    at writeAfterEnd (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_writable.js:263:3)
+    at PassThrough.Writable.write (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_writable.js:305:21)
+    [... lines matching original stack trace ...]
+    at DerivedLogger.Transform._read (C:\Users\mgant\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:177:10)
+
+Node.js v19.2.0
+
+
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:164)
+	at com.qa.utils.ServerManager.startServer(ServerManager.java:22)
+	at com.qa.stepdef.Hooks.initialize(Hooks.java:28)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://127.0.0.1:17644/wd/hub/status] to be available after 120001 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.ping(AppiumDriverLocalService.java:129)
+	at io.appium.java_client.service.local.AppiumDriverLocalService.start(AppiumDriverLocalService.java:151)
+	at com.qa.utils.ServerManager.startServer(ServerManager.java:22)
+	at com.qa.stepdef.Hooks.initialize(Hooks.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:59)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:98)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:71)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:199)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:234)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 47 more
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-10">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-10" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-When skipped">
+  <span class="keyword indention">When</span>
+  <span class="name">I enter username as &quot;<span class="argument">standard_user</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I enter password as &quot;<span class="argument">secret_sauce</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I login</span>
+
+  <span class="lead-duration duration">0.001</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">I should see Products page with title &quot;<span class="argument">PRODUCTS</span>&quot;</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+  <div class="inner-level hooks-element-after">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-11">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="after-11" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief failed">
+            <span class="keyword indention">After</span>
+              <span class="location name">com.qa.stepdef.Hooks.quit1(io.cucumber.java.Scenario)</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+          </div>
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-12">
+          <a>Error message</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-515LFDB', ip: '192.168.1.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: E:\appium1\appium-cucumberb..., appActivity: com.swaglabsmobileapp.Splas..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, chromeDriverPort: 11000, databaseEnabled: false, desired: {app: E:\appium1\appium-cucumberb..., appActivity: com.swaglabsmobileapp.Splas..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, chromeDriverPort: 11000, deviceName: X990, platformName: android, systemPort: 10000, udid: ee1e07a}, deviceApiLevel: 25, deviceManufacturer: unknown, deviceModel: X990, deviceName: ee1e07a, deviceScreenDensity: 320, deviceScreenSize: 720x1280, deviceUDID: ee1e07a, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 7.1.2, statBarHeight: 48, systemPort: 10000, takesScreenshot: true, udid: ee1e07a, viewportRect: {height: 1232, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: d01967e5-623e-441a-98bf-405ff1ca5556
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.qa.stepdef.Hooks.quit1(Hooks.java:42)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+        </div>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+        </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
     </div>
   </div>
 </div>
