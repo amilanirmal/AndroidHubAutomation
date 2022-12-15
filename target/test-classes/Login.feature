@@ -1,4 +1,3 @@
-@test
 Feature: Login scenarios
 
   @appium

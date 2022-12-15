@@ -1,20 +1,8 @@
-[Android_X990 INFO ] 2022-12-10 02:54:20.846 ServerManager:20 - starting appium server
-[Android_X990 INFO ] 2022-12-10 02:56:27.556 ServerManager:29 - Appium server started
-[Android_X990 INFO ] 2022-12-10 02:56:29.183 DriverManager:46 - initializing Appium driver
-[Android_X990 INFO ] 2022-12-10 02:56:29.387 PropertyManager:17 - loading config properties
-[Android_X990 INFO ] 2022-12-10 02:56:30.249 CapabilitiesManager:18 - getting capabilities
-[Android_X990 INFO ] 2022-12-10 02:56:30.253 CapabilitiesManager:34 - appUrl isE:\appium1\appium-cucumberbdd-master\src\test\resources\apps\Android.SauceLabs.Mobile.Sample.app.2.2.1.apk
-[Android_X990 INFO ] 2022-12-10 02:58:18.070 DriverManager:58 - Driver is initialized
-[Android_X990 INFO ] 2022-12-10 02:58:23.840 BasePage:71 - login with invalidUsername
-[Android_X990 INFO ] 2022-12-10 02:58:25.913 BasePage:71 - password is secret_sauce
-[Android_X990 INFO ] 2022-12-10 02:58:27.140 BasePage:53 - press login button
-[Android_X990 INFO ] 2022-12-10 02:58:29.510 BasePage:97 - error text is - Username and password do not match any user in this service.
-[Android_X990 INFO ] 2022-12-10 02:58:37.762 VideoManager:35 - video path: Android_X990\Videos\Login with invalid user name.mp4
-[Android_X990 INFO ] 2022-12-10 02:58:39.799 ServerManager:20 - starting appium server
-[Android_X990 INFO ] 2022-12-10 02:59:23.702 ServerManager:29 - Appium server started
-[Android_X990 INFO ] 2022-12-10 02:59:23.703 DriverManager:46 - initializing Appium driver
-[Android_X990 INFO ] 2022-12-10 02:59:23.704 CapabilitiesManager:18 - getting capabilities
-[Android_X990 INFO ] 2022-12-10 02:59:23.705 CapabilitiesManager:34 - appUrl isE:\appium1\appium-cucumberbdd-master\src\test\resources\apps\Android.SauceLabs.Mobile.Sample.app.2.2.1.apk
-[Android_X990 INFO ] 2022-12-10 03:00:07.987 DriverManager:58 - Driver is initialized
-[Android_X990 INFO ] 2022-12-10 03:00:12.552 ServerManager:20 - starting appium server
-[Android_X990 INFO ] 2022-12-10 03:03:26.857 WebBasePage:29 - enter submit
+[Android_X990 INFO ] 2022-12-13 08:01:54.347 ServerManager:20 - starting appium server
+[Android_X990 INFO ] 2022-12-13 08:04:26.657 ServerManager:29 - Appium server started
+[Android_X990 INFO ] 2022-12-13 08:04:26.836 DriverManager:46 - initializing Appium driver
+[Android_X990 INFO ] 2022-12-13 08:04:26.953 PropertyManager:17 - loading config properties
+[Android_X990 INFO ] 2022-12-13 08:04:27.067 CapabilitiesManager:18 - getting capabilities
+[Android_X990 INFO ] 2022-12-13 08:04:27.072 CapabilitiesManager:34 - appUrl isE:\appium1\appium-cucumberbdd-master\src\test\resources\apps\BML_V2.57_TEST.apk
+[Android_X990 INFO ] 2022-12-13 08:05:45.003 DriverManager:58 - Driver is initialized
+[Android_X990 INFO ] 2022-12-13 08:06:00.919 VideoManager:35 - video path: Android_X990\Videos\Edit table and add tmsurl ,appcode.mp4

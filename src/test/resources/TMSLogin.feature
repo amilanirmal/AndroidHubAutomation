@@ -1,4 +1,3 @@
-@test
 Feature: TMS login scenarios
 
   @web

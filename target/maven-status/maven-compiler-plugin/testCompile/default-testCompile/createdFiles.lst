@@ -8,8 +8,10 @@ com\qa\stepdef\TMSStepdefs.class
 com\qa\pages\TMSLoginPage.class
 com\qa\pages\SettingsPage.class
 com\qa\stepdef\ProductStepDef.class
+com\qa\pages\EditTablePage.class
 com\qa\pages\ProductsPage.class
 com\qa\pages\LoginPage.class
 com\qa\pages\ProductDetailsPage.class
 com\qa\pages\BasePage$2.class
 com\qa\runners\MyRunnerTest.class
+com\qa\stepdef\EditTableDef.class
