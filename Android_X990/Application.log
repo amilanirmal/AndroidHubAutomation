@@ -1,8 +1,10 @@
-[Android_X990 INFO ] 2022-12-13 08:01:54.347 ServerManager:20 - starting appium server
-[Android_X990 INFO ] 2022-12-13 08:04:26.657 ServerManager:29 - Appium server started
-[Android_X990 INFO ] 2022-12-13 08:04:26.836 DriverManager:46 - initializing Appium driver
-[Android_X990 INFO ] 2022-12-13 08:04:26.953 PropertyManager:17 - loading config properties
-[Android_X990 INFO ] 2022-12-13 08:04:27.067 CapabilitiesManager:18 - getting capabilities
-[Android_X990 INFO ] 2022-12-13 08:04:27.072 CapabilitiesManager:34 - appUrl isE:\appium1\appium-cucumberbdd-master\src\test\resources\apps\BML_V2.57_TEST.apk
-[Android_X990 INFO ] 2022-12-13 08:05:45.003 DriverManager:58 - Driver is initialized
-[Android_X990 INFO ] 2022-12-13 08:06:00.919 VideoManager:35 - video path: Android_X990\Videos\Edit table and add tmsurl ,appcode.mp4
+[Android_X990 INFO ] 2022-12-16 23:46:10.885 ServerManager:20 - starting appium server
+[Android_X990 INFO ] 2022-12-16 23:47:25.375 ServerManager:29 - Appium server started
+[Android_X990 INFO ] 2022-12-16 23:47:25.498 DriverManager:46 - initializing Appium driver
+[Android_X990 INFO ] 2022-12-16 23:47:25.600 PropertyManager:17 - loading config properties
+[Android_X990 INFO ] 2022-12-16 23:47:25.654 CapabilitiesManager:18 - getting capabilities
+[Android_X990 INFO ] 2022-12-16 23:47:25.657 CapabilitiesManager:34 - appUrl isE:\appium1\appium-cucumberbdd-master\src\test\resources\apps\BML_V2.57_TEST.apk
+[Android_X990 INFO ] 2022-12-16 23:48:11.820 DriverManager:58 - Driver is initialized
+[Android_X990 INFO ] 2022-12-16 23:48:14.709 BasePage:53 - press login button
+[Android_X990 INFO ] 2022-12-16 23:48:16.071 BasePage:53 - press edit table
+[Android_X990 INFO ] 2022-12-16 23:48:21.636 VideoManager:35 - video path: Android_X990\Videos\Edit table and add tmsurl ,appcode.mp4

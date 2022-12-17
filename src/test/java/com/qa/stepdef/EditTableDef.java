@@ -12,10 +12,12 @@ public class EditTableDef {
 
     @And("^Click on Edit table$")
     public void clickOnEditTable() throws InterruptedException{
+        new EditTablePage().clickOnEditTable();
     }
 
     @And("^Enter the password$")
     public void enterThePassword() throws InterruptedException{
+        new EditTablePage().enterPWDeditable();
     }
 
     @And("^click on the ok$")
