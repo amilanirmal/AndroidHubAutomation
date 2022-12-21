@@ -14,6 +14,28 @@ public class EditTablePage extends BasePage {
 
     @AndroidFindBy(id = "passwordEditText")
     private MobileElement editTablepwd;
+
+    @AndroidFindBy(xpath = "//android.widget.Button[@text='OK']")
+    private MobileElement editTablePwdOK;
+
+    @AndroidFindBy(id = "button2")
+    private MobileElement editTablePwdCancel;
+
+    @AndroidFindBy(id = "custom_spinner")
+    private MobileElement tableDropDown;
+
+    @AndroidFindBy(xpath ="//android.widget.TextView[@text='TCT']")
+    private MobileElement tCTTable;
+
+    @AndroidFindBy(xpath ="//android.widget.EditText[@index='77']")
+    private MobileElement tmsUrl;
+
+    @AndroidFindBy(xpath ="//android.widget.EditText[@index='95']")
+    private MobileElement appCode;
+
+    @AndroidFindBy(id = "btn_Save")
+    private MobileElement saveBtn;
+
     public EditTablePage()
     {}
     public EditTablePage openNavigation()
@@ -32,5 +54,47 @@ public class EditTablePage extends BasePage {
         return this;
     }
 
+    public EditTablePage clickOk()
+    {
+        click(editTablePwdOK, "click OK");
+        return this;
+    }
+    public EditTablePage clickOnDropDwn()
+    {
+        click(tableDropDown, "click on table drop down");
+        return this;
+    }
 
+    public EditTablePage selectTCTTable()
+    {
+        click(tCTTable, "Select TCT table");
+        return this;
+    }
+    public EditTablePage scrollDwnForEditTmsUrl(String val) throws Exception {
+        scrollToElement(tmsUrl, val);
+        return this;
+    }
+    public EditTablePage scrollDwnForEditAppcode(String val) throws Exception {
+        scrollToElement(appCode, val);
+        return this;
+    }
+
+    public EditTablePage editTMSUrl(String url)
+    {
+        clear(tmsUrl);
+        sendKeys(tmsUrl, url);
+        return this;
+    }
+
+    public EditTablePage editAppCode(String txtCode)
+    {
+        sendKeys(appCode, txtCode);
+        return this;
+    }
+    public EditTablePage reStartApp()
+    {
+        closeApp();
+        launchApp();
+        return this;
+    }
 }

@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>16 Dec 2022, 23:48</td>
+      <td>20 Dec 2022, 09:32</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@test</td>
-          <td      class="passed"    >13</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >6</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >6</td>
           <td >0</td>
           <td >0</td>
           <td class="total">13</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="5295453700">5.295</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="20482141500">20.482</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -182,12 +182,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">5.295</span>
+  <span class="lead-duration duration">20.482</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Edit table and add tmsurl ,appcode</span>
 
@@ -198,7 +198,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -220,7 +220,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.qa.stepdef.Hooks.initialize()</span>
 
-  <span class="lead-duration duration">2:3.502</span>
+  <span class="lead-duration duration">2:32.122</span>
 
           </div>
 
@@ -237,9 +237,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -249,7 +249,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -257,7 +257,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">Open navigation bar</span>
 
-  <span class="lead-duration duration">2.191</span>
+  <span class="lead-duration duration">2.586</span>
 
 </div>
 
@@ -284,7 +284,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on Edit table</span>
 
-  <span class="lead-duration duration">1.932</span>
+  <span class="lead-duration duration">1.600</span>
 
 </div>
 
@@ -311,7 +311,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Enter the password</span>
 
-  <span class="lead-duration duration">1.157</span>
+  <span class="lead-duration duration">1.278</span>
 
 </div>
 
@@ -338,7 +338,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">click on the ok</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.355</span>
 
 </div>
 
@@ -365,7 +365,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on CDT</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">1.991</span>
 
 </div>
 
@@ -392,6 +392,76 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">Click on TCT</span>
 
+  <span class="lead-duration duration">1.976</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">Scroll for TMSURL Using Using direction &quot;<span class="argument">up</span>&quot;</span>
+
+  <span class="lead-duration duration">9.691</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>java.lang.Exception:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>java.lang.Exception: Element not found
+	at com.qa.pages.BasePage.scrollToElement(BasePage.java:188)
+	at com.qa.pages.EditTablePage.scrollDwnForEditTmsUrl(EditTablePage.java:74)
+	at com.qa.stepdef.EditTableDef.scrollForTMSURLUsingUsingDirection(EditTableDef.java:39)
+	at &#10045;.Scroll for TMSURL Using Using direction &quot;up&quot;(file:///E:/appium1/appium-cucumberbdd-master/src/test/resources/EditTable.feature:12)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">Click on TMLSUrl field</span>
+
   <span class="lead-duration duration">0.000</span>
 
 </div>
@@ -415,11 +485,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
-  <span class="name">Scroll for TMSURL</span>
+  <span class="name">Enter TMSUrl &quot;<span class="argument">http://124.43.16.185:50501/api/v1/Application</span>&quot;</span>
 
-  <span class="lead-duration duration">0.008</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -442,11 +512,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
-  <span class="name">Click on TMLSUrl field</span>
+  <span class="name">Scroll for Appcode Using Using direction &quot;<span class="argument">up</span>&quot;</span>
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -469,61 +539,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Enter TMSUrl &quot;&quot;</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">Scroll for Appcode</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Click on AppCode field</span>
 
@@ -550,9 +566,9 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
-  <span class="name">Enter AppCode &quot;&quot;</span>
+  <span class="name">Enter AppCode &quot;<span class="argument">V214</span>&quot;</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -577,7 +593,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Restart App</span>
 
@@ -608,9 +624,9 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-5">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -620,17 +636,50 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
-          <div class="brief passed">
+          <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit1(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">5.470</span>
+  <span class="lead-duration duration">0.250</span>
 
           </div>
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>Error message</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-515LFDB', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: E:\appium1\appium-cucumberb..., appActivity: epic.epicposandroidapp.Main..., appPackage: ml.epic.android.pos, automationName: UiAutomator2, chromeDriverPort: 11000, databaseEnabled: false, desired: {app: E:\appium1\appium-cucumberb..., appActivity: epic.epicposandroidapp.Main..., appPackage: ml.epic.android.pos, automationName: UiAutomator2, chromeDriverPort: 11000, deviceName: X990, platformName: android, systemPort: 10000, udid: ee1e07a}, deviceApiLevel: 25, deviceManufacturer: unknown, deviceModel: X990, deviceName: ee1e07a, deviceScreenDensity: 320, deviceScreenSize: 720x1280, deviceUDID: ee1e07a, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 7.1.2, statBarHeight: 48, systemPort: 10000, takesScreenshot: true, udid: ee1e07a, viewportRect: {height: 1232, left: 0, top: 48, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 3435710c-31d1-4552-a822-6e2f2d7a311b
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+	at com.qa.stepdef.Hooks.quit1(Hooks.java:42)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 

@@ -1,10 +1,12 @@
-[Android_X990 INFO ] 2022-12-16 23:46:10.885 ServerManager:20 - starting appium server
-[Android_X990 INFO ] 2022-12-16 23:47:25.375 ServerManager:29 - Appium server started
-[Android_X990 INFO ] 2022-12-16 23:47:25.498 DriverManager:46 - initializing Appium driver
-[Android_X990 INFO ] 2022-12-16 23:47:25.600 PropertyManager:17 - loading config properties
-[Android_X990 INFO ] 2022-12-16 23:47:25.654 CapabilitiesManager:18 - getting capabilities
-[Android_X990 INFO ] 2022-12-16 23:47:25.657 CapabilitiesManager:34 - appUrl isE:\appium1\appium-cucumberbdd-master\src\test\resources\apps\BML_V2.57_TEST.apk
-[Android_X990 INFO ] 2022-12-16 23:48:11.820 DriverManager:58 - Driver is initialized
-[Android_X990 INFO ] 2022-12-16 23:48:14.709 BasePage:53 - press login button
-[Android_X990 INFO ] 2022-12-16 23:48:16.071 BasePage:53 - press edit table
-[Android_X990 INFO ] 2022-12-16 23:48:21.636 VideoManager:35 - video path: Android_X990\Videos\Edit table and add tmsurl ,appcode.mp4
+[Android_X990 INFO ] 2022-12-20 09:30:07.219 ServerManager:20 - starting appium server
+[Android_X990 INFO ] 2022-12-20 09:31:27.711 ServerManager:29 - Appium server started
+[Android_X990 INFO ] 2022-12-20 09:31:27.838 DriverManager:46 - initializing Appium driver
+[Android_X990 INFO ] 2022-12-20 09:31:27.963 PropertyManager:17 - loading config properties
+[Android_X990 INFO ] 2022-12-20 09:31:28.139 CapabilitiesManager:18 - getting capabilities
+[Android_X990 INFO ] 2022-12-20 09:31:28.143 CapabilitiesManager:34 - appUrl isE:\appium1\appium-cucumberbdd-master\src\test\resources\apps\BML_V2.57_TEST.apk
+[Android_X990 INFO ] 2022-12-20 09:32:23.641 DriverManager:58 - Driver is initialized
+[Android_X990 INFO ] 2022-12-20 09:32:27.001 BasePage:53 - press login button
+[Android_X990 INFO ] 2022-12-20 09:32:29.005 BasePage:53 - press edit table
+[Android_X990 INFO ] 2022-12-20 09:32:31.754 BasePage:53 - click OK
+[Android_X990 INFO ] 2022-12-20 09:32:33.811 BasePage:53 - click on table drop down
+[Android_X990 INFO ] 2022-12-20 09:32:35.096 BasePage:53 - Select TCT table
