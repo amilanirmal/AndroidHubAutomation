@@ -167,17 +167,17 @@ BasePage {
         switch (direction) {
             case "up":
                 endY = (int) (size.height * 0.4);
-                startY = (int) (size.height * 0.6);
+                startY = (int) (size.height * 0.9);
                 break;
 
             case "down":
-                endY = (int) (size.height * 0.6);
+                endY = (int) (size.height * 0.9);
                 startY = (int) (size.height * 0.4);
                 break;
         }
 
-        for (int i = 0; i < 15; i++) {
-            if (find(element, 1)) {
+        for (int i = 0; i < 20; i++) {
+            if (find(element, 4)) {
                 isFound = true;
                 break;
             } else {
