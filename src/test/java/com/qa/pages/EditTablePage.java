@@ -3,6 +3,7 @@ package com.qa.pages;
 import com.qa.utils.TestUtils;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import org.openqa.selenium.By;
 
 public class EditTablePage extends BasePage {
     TestUtils utils = new TestUtils();
@@ -33,7 +34,7 @@ public class EditTablePage extends BasePage {
     @AndroidFindBy(xpath ="//*[@index='95']")
     private MobileElement appCode;
 
-    @AndroidFindBy(xpath = "//android.widget.Button[@id='btn_Save']")
+    @AndroidFindBy(xpath = "//android.widget.Button[@text='SAVE']")
     private MobileElement saveBtn;
 
     public EditTablePage()
@@ -76,6 +77,7 @@ public class EditTablePage extends BasePage {
     }
     public EditTablePage editTMSUrl(String url)
     {
+        waitForVisibility(tmsUrl);
         clear(tmsUrl);
         sendKeys(tmsUrl, url);
         return this;
@@ -86,14 +88,14 @@ public class EditTablePage extends BasePage {
     }
     public EditTablePage editAppCode(String txtCode)
     {
+        waitForVisibility(appCode);
         clear(appCode);
         sendKeys(appCode, txtCode);
         return this;
     }
     public EditTablePage saveTable()
     {
-        click(saveBtn
-        );
+        click(saveBtn);
         return this;
     }
     public EditTablePage reStartApp()
