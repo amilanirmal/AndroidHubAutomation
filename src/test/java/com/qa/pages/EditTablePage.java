@@ -27,13 +27,13 @@ public class EditTablePage extends BasePage {
     @AndroidFindBy(xpath ="//android.widget.TextView[@text='TCT']")
     private MobileElement tCTTable;
 
-    @AndroidFindBy(xpath ="//android.widget.EditText[@index='77']")
+    @AndroidFindBy(xpath ="//*[@index='77']")
     private MobileElement tmsUrl;
 
-    @AndroidFindBy(xpath ="//android.widget.EditText[@index='95']")
+    @AndroidFindBy(xpath ="//*[@index='95']")
     private MobileElement appCode;
 
-    @AndroidFindBy(id = "btn_Save")
+    @AndroidFindBy(xpath = "//android.widget.Button[@id='btn_Save']")
     private MobileElement saveBtn;
 
     public EditTablePage()
@@ -74,21 +74,26 @@ public class EditTablePage extends BasePage {
         scrollToElement(tmsUrl, val);
         return this;
     }
-    public EditTablePage scrollDwnForEditAppcode(String val) throws Exception {
-        scrollToElement(appCode, val);
-        return this;
-    }
-
     public EditTablePage editTMSUrl(String url)
     {
         clear(tmsUrl);
         sendKeys(tmsUrl, url);
         return this;
     }
-
+    public EditTablePage scrollDwnForEditAppcode(String val) throws Exception {
+        scrollToElement(appCode, val);
+        return this;
+    }
     public EditTablePage editAppCode(String txtCode)
     {
+        clear(appCode);
         sendKeys(appCode, txtCode);
+        return this;
+    }
+    public EditTablePage saveTable()
+    {
+        click(saveBtn
+        );
         return this;
     }
     public EditTablePage reStartApp()

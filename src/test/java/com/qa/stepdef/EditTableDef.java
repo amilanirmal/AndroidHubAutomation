@@ -39,10 +39,6 @@ public class EditTableDef {
         new EditTablePage().scrollDwnForEditTmsUrl(arg0);
     }
 
-    @And("^Click on TMLSUrl field$")
-    public void clickOnTMLSUrlField() throws InterruptedException{
-    }
-
     @And("^Enter TMSUrl \"([^\"]*)\"$")
     public void enterTMSUrl(String arg0) throws InterruptedException{
         new EditTablePage().editTMSUrl(arg0);
@@ -52,18 +48,16 @@ public class EditTableDef {
         new EditTablePage().scrollDwnForEditAppcode(arg0);
     }
 
-    @And("^Click on AppCode field$")
-    public void clickOnAppCodeField() throws InterruptedException{
-    }
-
     @And("^Enter AppCode \"([^\"]*)\"$")
     public void enterAppCode(String arg0) throws InterruptedException{
         new EditTablePage().editAppCode(arg0);
     }
-
+    @And("Save the changes")
+    public void saveTheChanges() {
+        new EditTablePage().saveTable();
+    }
     @And("^Restart App$")
     public void restartApp() throws InterruptedException{
         new EditTablePage().reStartApp();
     }
-
 }

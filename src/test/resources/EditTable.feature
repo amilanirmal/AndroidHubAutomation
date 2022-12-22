@@ -10,9 +10,8 @@ Feature: Edit table TCT
     And Click on CDT
     And Click on TCT
     And Scroll for TMSURL Using Using direction "up"
-    And Click on TMLSUrl field
     And Enter TMSUrl "http://124.43.16.185:50501/api/v1/Application"
     And Scroll for Appcode Using Using direction "up"
-    And Click on AppCode field
     And Enter AppCode "V214"
+    And Save the changes
     And Restart App
