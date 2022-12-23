@@ -16,18 +16,15 @@ import org.junit.runner.RunWith;
 import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(
-        plugin = {"pretty"
-                , "html:target/cucumber/report.html"
-                , "summary"
-                , "de.monochromata.cucumber.report.PrettyReports:target/cucumber-html-reports"}
+@CucumberOptions(plugin = {"pretty", "html:target/cucumber/report.html", "summary", "de.monochromata.cucumber.report.PrettyReports:target/cucumber-html-reports"}
+        ,tags = "@test2"
         ,features = {"src/test/resources"}
         ,glue = {"com.qa.stepdef"}
         ,snippets = CAMELCASE
         ,dryRun=false
         ,monochrome=true
         ,strict=true
-        ,tags = "@test"
+
 
 )
 

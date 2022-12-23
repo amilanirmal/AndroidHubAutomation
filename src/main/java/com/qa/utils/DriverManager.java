@@ -70,7 +70,7 @@ public class DriverManager {
         WebDriver webDriver = null;
         try {
             if (webDriver == null) {
-                System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "src\\test\\resources\\chromedriver.exe");
                 setWebDriver();
                 webDriver = getWebDriver();
                 webDriver.get("http://124.43.16.185:50501/TMS_V2.05/?param=RVBJQ3xCTUw=");

@@ -32,6 +32,9 @@ public class Hooks {
     @Before("@web")
     public void initialize1() throws Exception {
         new DriverManager().initializeWebDriver();
+
+        ThreadContext.put("ROUTINGKEY", "SeleniumWeb" + "_"
+                + "ChromeDriver");
     }
 
     @After("@appium")

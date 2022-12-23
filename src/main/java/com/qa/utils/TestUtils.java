@@ -15,7 +15,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
 
-public class TestUtils {
+public class
+TestUtils {
 	public static final long WAIT = 10;
 	
 	public HashMap<String, String> parseStringXML(InputStream file) throws Exception{
