@@ -2,6 +2,7 @@ package com.qa.stepdef;
 
 import com.qa.pages.TMSLoginPage;
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class TMSStepdefs {
@@ -16,5 +17,10 @@ public class TMSStepdefs {
     @When("^I click the submit button$")
     public void iClickTheSubmitButton() throws Exception {
         new TMSLoginPage().clickSubmit();
+    }
+
+    @Then("^I verify the home page$")
+    public void iVerifyTheHomePage() throws Exception{
+        new TMSLoginPage().getPageTitle();
     }
 }

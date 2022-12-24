@@ -37,4 +37,10 @@ public class TMSLoginPage extends WebBasePage {
         click(submitBtn,"enter submit");
         return this;
     }
+
+    public TMSLoginPage getPageTitle() throws InterruptedException
+    {
+        System.out.println(pageTitle());
+        return this;
+    }
 }

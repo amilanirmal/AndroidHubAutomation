@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>23 Dec 2022, 05:00</td>
+      <td>24 Dec 2022, 08:07</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">TMS login scenarios</td>
-          <td      class="passed"    >3</td>
+          <td      class="passed"    >4</td>
           <td >0</td>
+          <td     class="skipped"   >4</td>
           <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">3</td>
+          <td   class="undefined" >1</td>
+          <td class="total">9</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="7091867500">7.091</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="15042256400">15.042</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -173,7 +173,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">TMS login scenarios</span>
 
@@ -194,12 +194,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">7.091</span>
+  <span class="lead-duration duration">15.042</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Login with valid user name</span>
 
@@ -210,7 +210,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -232,7 +232,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.qa.stepdef.Hooks.initialize1()</span>
 
-  <span class="lead-duration duration">37.072</span>
+  <span class="lead-duration duration">1:6.429</span>
 
           </div>
 
@@ -249,9 +249,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -261,7 +261,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -269,7 +269,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I enter tms username as &quot;<span class="argument">nirmal</span>&quot;</span>
 
-  <span class="lead-duration duration">1.023</span>
+  <span class="lead-duration duration">0.572</span>
 
 </div>
 
@@ -296,7 +296,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I enter tms password as &quot;<span class="argument">123456</span>&quot;</span>
 
-  <span class="lead-duration duration">0.145</span>
+  <span class="lead-duration duration">0.151</span>
 
 </div>
 
@@ -323,7 +323,169 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I click the submit button</span>
 
-  <span class="lead-duration duration">5.922</span>
+  <span class="lead-duration duration">14.298</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">I verify the home page</span>
+
+  <span class="lead-duration duration">0.018</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And undefined">
+  <span class="keyword indention">And</span>
+  <span class="name">I extract the side menu</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select the Device section</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I select the device operation Management page</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I verify device on Boarding</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">I click on assign operation</span>
+
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -368,7 +530,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit2(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">3.747</span>
+  <span class="lead-duration duration">1.968</span>
 
           </div>
 
@@ -381,13 +543,13 @@ $(document).ready(function() {
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
       <a>Login with valid user name</a>
-      <a href="embeddings/embedding_1101170835.png" download target="_blank">
+      <a href="embeddings/embedding_-1477153783.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-5" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_1101170835.png">
+        <img src="embeddings/embedding_-1477153783.png">
       </div>
     </div>
   </div>

@@ -34,4 +34,8 @@ public class WebBasePage {
         waitForVisibility(e);
         e.sendKeys(txt);
     }
+    public String pageTitle()
+    {
+        return webDriver.getTitle();
+    }
 }
