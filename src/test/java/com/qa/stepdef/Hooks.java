@@ -50,8 +50,8 @@ public class Hooks {
         new VideoManager().stopRecording(scenario.getName());
         DriverManager driverManager = new DriverManager();
         if(driverManager.getDriver() != null){
-            driverManager.getDriver().quit();
-            driverManager.setDriver(null);
+            //driverManager.getDriver().quit();
+           // driverManager.setDriver(null);
         }
         ServerManager serverManager = new ServerManager();
         if(serverManager.getServer() != null){

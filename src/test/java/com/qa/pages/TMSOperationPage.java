@@ -8,7 +8,6 @@ import org.openqa.selenium.support.How;
 
 public class TMSOperationPage extends WebBasePage {
     TestUtils utils = new TestUtils();
-
     @FindBy(how = How.XPATH, using = "//div[@class='section-title']/img[@src='resources/assets/image/icons/drop_down.svg']")
     private WebElement menuDropDwn;
 
@@ -45,6 +44,7 @@ public class TMSOperationPage extends WebBasePage {
     @FindBy(how = How.XPATH, using = "//input[@id='assignbutasp']")
     private WebElement assignBtn;
 
+
     public TMSOperationPage()
     {
     }
@@ -71,7 +71,28 @@ public class TMSOperationPage extends WebBasePage {
     }
     public TMSOperationPage selectAssignOperation(String msg)
     {
+        waitForVisibility(assignOperation);
         click(assignOperation,msg);
         return this;
     }
+
+    public TMSOperationPage selectOperation(String msg)
+    {
+        deviceOperationCommonMethod(msg);
+        return this;
+    }
+
+    public TMSOperationPage sendToRightSide(String msg)
+    {
+        waitForVisibility(arrowSelectSingleOp);
+        click(arrowSelectSingleOp,msg);
+        return this;
+    }
+    public TMSOperationPage assignedOperation(String msg) throws InterruptedException {
+        click(assignBtn,msg);
+        Thread.sleep(5000);
+        return this;
+    }
+
+
 }

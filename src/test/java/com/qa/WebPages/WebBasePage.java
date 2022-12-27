@@ -3,6 +3,7 @@ package com.qa.WebPages;
 import com.qa.utils.DriverManager;
 import com.qa.utils.TestUtils;
 import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -45,5 +46,19 @@ public class WebBasePage {
         js.executeScript("arguments[0].scrollIntoView(true);",e);
         waitForVisibility(e);
         utils.log().info(txt);
+    }
+
+    public void deviceOperationCommonMethod(String msg) {
+        StringBuilder s1 =new StringBuilder("//*[@id=\"newListsp\"]//option[text()='");
+        StringBuilder s2 =new StringBuilder(msg);
+        StringBuilder s3 =new StringBuilder("']");
+
+        StringBuilder s4 = s1.append(s2);
+        StringBuilder s5 = s4.append(s3);
+
+        WebElement operation =webDriver.findElement(By.xpath(s5.toString()));
+        waitForVisibility(operation);
+        utils.log().info(msg);
+        operation.click();
     }
 }

@@ -1,7 +1,11 @@
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 00:12:36.304 WebBasePage:37 - nirmal
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 00:12:36.939 WebBasePage:37 - 654321
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 00:12:37.156 WebBasePage:30 - enter submit
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 00:13:18.197 WebBasePage:30 - extract the left side bar
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 00:13:18.985 WebBasePage:30 - select device section
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 00:13:21.206 WebBasePage:30 - select device operation
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 00:14:05.324 WebBasePage:47 - scrolling for device
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:06.145 WebBasePage:38 - nirmal
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:06.536 WebBasePage:38 - 654321
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:06.724 WebBasePage:31 - enter submit
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:19.694 WebBasePage:31 - extract the left side bar
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:20.879 WebBasePage:31 - select device section
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:21.681 WebBasePage:31 - select device operation
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:38.755 WebBasePage:48 - scrolling for device
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:38.940 WebBasePage:31 - assign operation
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:40.093 WebBasePage:61 - Profile Download
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:40.675 WebBasePage:31 - sent operation to right side
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:40.892 WebBasePage:31 - assign operation

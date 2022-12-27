@@ -30,4 +30,20 @@ public class DeviceOpDef {
         new TMSOperationPage().selectAssignOperation("assign operation");
 
     }
+    @And("^I select the device operation \"([^\"]*)\"$")
+    public void iSelectTheDeviceOperation(String arg0) {
+        new TMSOperationPage().selectOperation(arg0);
+    }
+
+    @And("^Send operation to right side$")
+    public void sendOperationToRightSide() {
+        new TMSOperationPage().sendToRightSide("sent operation to right side");
+    }
+
+    @And("^Click on assign$")
+    public void clickOnAssign() throws InterruptedException {
+        new TMSOperationPage().assignedOperation("assign operation");
+    }
+
+
 }

@@ -12,6 +12,9 @@ Feature: TMS login scenarios
     And I select the device operation Management page
     And I verify device on Boarding
     And I click on assign operation
+    And I select the device operation "Profile Download"
+    And Send operation to right side
+    And Click on assign
 
     Examples:
       | username | password |

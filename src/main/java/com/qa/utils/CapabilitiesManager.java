@@ -30,7 +30,7 @@ public class CapabilitiesManager {
                     caps.setCapability("chromeDriverPort", params.getChromeDriverPort());
                     //String androidAppUrl = getClass().getResource(props.getProperty("androidAppLocation")).getFile();
                     String androidAppUrl = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test"
-                            + File.separator + "resources" + File.separator + "apps" + File.separator + "BML_V2.57_TEST.apk";
+                            + File.separator + "resources" + File.separator + "apps" + File.separator + "BML_X990_V214_V2.57.apk";
                     utils.log().info("appUrl is" + androidAppUrl);
                     caps.setCapability("app", androidAppUrl);
                     break;
