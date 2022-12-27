@@ -2,6 +2,7 @@ package com.qa.pages;
 
 import com.qa.WebPages.WebBasePage;
 import com.qa.utils.TestUtils;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -40,7 +41,8 @@ public class TMSLoginPage extends WebBasePage {
 
     public TMSLoginPage getPageTitle() throws InterruptedException
     {
-        System.out.println(pageTitle());
+        boolean titleCheck = pageTitle().equalsIgnoreCase("Home");
+        Assert.assertTrue(titleCheck);
         return this;
     }
 }

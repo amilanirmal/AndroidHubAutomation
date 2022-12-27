@@ -1,1 +1,7 @@
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-24 08:07:12.496 WebBasePage:29 - enter submit
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 00:12:36.304 WebBasePage:37 - nirmal
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 00:12:36.939 WebBasePage:37 - 654321
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 00:12:37.156 WebBasePage:30 - enter submit
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 00:13:18.197 WebBasePage:30 - extract the left side bar
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 00:13:18.985 WebBasePage:30 - select device section
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 00:13:21.206 WebBasePage:30 - select device operation
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 00:14:05.324 WebBasePage:47 - scrolling for device

@@ -3,6 +3,7 @@ package com.qa.WebPages;
 import com.qa.utils.DriverManager;
 import com.qa.utils.TestUtils;
 import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
@@ -33,9 +34,16 @@ public class WebBasePage {
     public void sendKeys(WebElement e, String txt) {
         waitForVisibility(e);
         e.sendKeys(txt);
+        utils.log().info(txt);
     }
     public String pageTitle()
     {
         return webDriver.getTitle();
+    }
+    public void scrollDown(WebElement e, String txt) {
+        JavascriptExecutor js = (JavascriptExecutor) webDriver;
+        js.executeScript("arguments[0].scrollIntoView(true);",e);
+        waitForVisibility(e);
+        utils.log().info(txt);
     }
 }

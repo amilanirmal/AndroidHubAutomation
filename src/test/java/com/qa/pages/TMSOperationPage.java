@@ -21,6 +21,57 @@ public class TMSOperationPage extends WebBasePage {
     @FindBy(how = How.XPATH, using = "//table[@id='gridtable']//td[text() = 'V1E0181065']/following-sibling::td[6]")
     private WebElement assignOperation;
 
+    @FindBy(how = How.XPATH, using = "//table[@id='gridtable']//td[text() = 'V1E0181065']")
+    private WebElement deviceX990;
+
     @FindBy(how = How.XPATH, using = "//*[@id=\"newListsp\"]//option[text()='ECHO Operation']")
     private WebElement echoOpe;
+
+    @FindBy(how = How.XPATH, using = "//*[@id=\"newListsp\"]//option[text()='Profile Download']")
+    private WebElement profileDwnload;
+
+    @FindBy(how = How.XPATH, using = "//a[@id='rightsp']")
+    private WebElement arrowSelectSingleOp;
+
+    @FindBy(how = How.XPATH, using = "//a[@id='rightallsp']")
+    private WebElement arrowSelectAllOp;
+
+    @FindBy(how = How.XPATH, using = "//a[@id='leftsp']")
+    private WebElement arrowRemoveSigleOp;
+
+    @FindBy(how = How.XPATH, using = "//a[@id='leftallsp']")
+    private WebElement arrowRemoveAllOp;
+
+    @FindBy(how = How.XPATH, using = "//input[@id='assignbutasp']")
+    private WebElement assignBtn;
+
+    public TMSOperationPage()
+    {
+    }
+    public TMSOperationPage extractSideBar(String msg)
+    {
+        click(menuDropDwn,msg);
+        return this;
+    }
+    public TMSOperationPage selectDeviceSection(String msg)
+    {
+        click(deviceSection,msg);
+        return this;
+    }
+    public TMSOperationPage selectDeviceOperation(String msg)
+    {
+        click(deviceOpManagement,msg);
+        return this;
+    }
+    public TMSOperationPage verifyDevice()
+    {
+        scrollDown(deviceX990,"scrolling for device");
+        waitForVisibility(deviceX990);
+        return this;
+    }
+    public TMSOperationPage selectAssignOperation(String msg)
+    {
+        click(assignOperation,msg);
+        return this;
+    }
 }
