@@ -29,14 +29,6 @@ public class Hooks {
         new DriverManager().initializeDriver();
         new VideoManager().startRecording();
     }
-    @Before("@web")
-    public void initialize1() throws Exception {
-        new DriverManager().initializeWebDriver();
-
-        ThreadContext.put("ROUTINGKEY", "SeleniumWeb" + "_"
-                + "ChromeDriver");
-    }
-
     @After("@appium")
     public void quit1(Scenario scenario) throws IOException {
 
@@ -51,12 +43,19 @@ public class Hooks {
         DriverManager driverManager = new DriverManager();
         if(driverManager.getDriver() != null){
             //driverManager.getDriver().quit();
-           // driverManager.setDriver(null);
+            // driverManager.setDriver(null);
         }
         ServerManager serverManager = new ServerManager();
         if(serverManager.getServer() != null){
             serverManager.getServer().stop();
         }
+    }
+    @Before("@web")
+    public void initialize1() throws Exception {
+        new DriverManager().initializeWebDriver();
+
+        ThreadContext.put("ROUTINGKEY", "SeleniumWeb" + "_"
+                + "ChromeDriver");
     }
 
     @After("@web")

@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>27 Dec 2022, 07:35</td>
+      <td>29 Dec 2022, 01:32</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@test2</td>
-          <td      class="passed"    >12</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >9</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >2</td>
           <td >0</td>
           <td >0</td>
           <td class="total">12</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="44169297100">44.169</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="28291014600">28.291</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -182,12 +182,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">44.169</span>
+  <span class="lead-duration duration">28.291</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Login with valid user name</span>
 
@@ -198,7 +198,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -220,7 +220,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.qa.stepdef.Hooks.initialize1()</span>
 
-  <span class="lead-duration duration">1:5.863</span>
+  <span class="lead-duration duration">49.281</span>
 
           </div>
 
@@ -237,9 +237,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -249,7 +249,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -257,7 +257,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">I enter tms username as &quot;<span class="argument">nirmal</span>&quot;</span>
 
-  <span class="lead-duration duration">4.126</span>
+  <span class="lead-duration duration">4.091</span>
 
 </div>
 
@@ -284,7 +284,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I enter tms password as &quot;<span class="argument">654321</span>&quot;</span>
 
-  <span class="lead-duration duration">0.379</span>
+  <span class="lead-duration duration">0.114</span>
 
 </div>
 
@@ -311,7 +311,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I click the submit button</span>
 
-  <span class="lead-duration duration">12.896</span>
+  <span class="lead-duration duration">9.405</span>
 
 </div>
 
@@ -338,7 +338,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">I verify the home page</span>
 
-  <span class="lead-duration duration">0.055</span>
+  <span class="lead-duration duration">0.029</span>
 
 </div>
 
@@ -365,7 +365,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I extract the side menu</span>
 
-  <span class="lead-duration duration">0.512</span>
+  <span class="lead-duration duration">0.197</span>
 
 </div>
 
@@ -392,7 +392,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I select the Device section</span>
 
-  <span class="lead-duration duration">1.616</span>
+  <span class="lead-duration duration">1.877</span>
 
 </div>
 
@@ -419,7 +419,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I select the device operation Management page</span>
 
-  <span class="lead-duration duration">16.892</span>
+  <span class="lead-duration duration">11.911</span>
 
 </div>
 
@@ -446,7 +446,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I verify device on Boarding</span>
 
-  <span class="lead-duration duration">0.266</span>
+  <span class="lead-duration duration">0.091</span>
 
 </div>
 
@@ -473,7 +473,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I click on assign operation</span>
 
-  <span class="lead-duration duration">1.269</span>
+  <span class="lead-duration duration">0.488</span>
 
 </div>
 
@@ -496,11 +496,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">I select the device operation &quot;<span class="argument">Profile Download</span>&quot;</span>
 
-  <span class="lead-duration duration">0.566</span>
+  <span class="lead-duration duration">0.082</span>
 
 </div>
 
@@ -508,6 +508,44 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;newListsp&quot;]//option[text()='Profile Download']&quot;}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-515LFDB', ip: '192.168.1.132', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\mgant\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63015}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: dfd3c9921249125d469210cf052e158b
+*** Element info: {Using=xpath, value=//*[@id=&quot;newListsp&quot;]//option[text()='Profile Download']}
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.qa.WebPages.WebBasePage.deviceOperationCommonMethod(WebBasePage.java:59)
+	at com.qa.pages.TMSOperationPage.selectOperation(TMSOperationPage.java:81)
+	at com.qa.stepdef.DeviceOpDef.iSelectTheDeviceOperation(DeviceOpDef.java:35)
+	at &#10045;.I select the device operation &quot;Profile Download&quot;(file:///E:/appium1/appium-cucumberbdd-master/src/test/resources/TMSLogin.feature:15)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -523,11 +561,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Send operation to right side</span>
 
-  <span class="lead-duration duration">0.235</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -550,11 +588,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">Click on assign</span>
 
-  <span class="lead-duration duration">5.352</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -581,7 +619,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -593,13 +631,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.qa.stepdef.Hooks.quit2(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">27.350</span>
+  <span class="lead-duration duration">4.797</span>
 
           </div>
 
@@ -610,15 +648,15 @@ $(document).ready(function() {
 
   <div class="embeddings inner-level">
   <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
       <a>Login with valid user name</a>
-      <a href="embeddings/embedding_-2145609703.png" download target="_blank">
+      <a href="embeddings/embedding_-450970127.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
-    <div id="embedding-5" class="collapse collapsable-details ">
+    <div id="embedding-6" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-2145609703.png">
+        <img src="embeddings/embedding_-450970127.png">
       </div>
     </div>
   </div>

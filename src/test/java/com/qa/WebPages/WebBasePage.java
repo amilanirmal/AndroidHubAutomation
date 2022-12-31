@@ -61,4 +61,15 @@ public class WebBasePage {
         utils.log().info(msg);
         operation.click();
     }
+
+    public String xpathConcat(String msg1,String msg2,String msg3) {
+        StringBuilder s1 = new StringBuilder(msg1);
+        StringBuilder s2 = new StringBuilder(msg2);
+        StringBuilder s3 = new StringBuilder(msg3);
+
+        StringBuilder s4 = s1.append(s2);
+        StringBuilder s5 = s4.append(s3);
+        return s5.toString();
+
+    }
 }
