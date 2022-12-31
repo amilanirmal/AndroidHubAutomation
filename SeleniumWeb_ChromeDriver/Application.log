@@ -1,11 +1,11 @@
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:06.145 WebBasePage:38 - nirmal
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:06.536 WebBasePage:38 - 654321
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:06.724 WebBasePage:31 - enter submit
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:19.694 WebBasePage:31 - extract the left side bar
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:20.879 WebBasePage:31 - select device section
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:21.681 WebBasePage:31 - select device operation
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:38.755 WebBasePage:48 - scrolling for device
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:38.940 WebBasePage:31 - assign operation
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:40.093 WebBasePage:61 - Profile Download
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:40.675 WebBasePage:31 - sent operation to right side
-[SeleniumWeb_ChromeDriver INFO ] 2022-12-27 07:34:40.892 WebBasePage:31 - assign operation
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-30 15:42:28.793 WebBasePage:38 - nirmal
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-30 15:42:28.983 WebBasePage:38 - 123456
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-30 15:42:29.040 WebBasePage:31 - enter submit
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-30 15:42:29.606 WebBasePage:31 - extract the left side bar
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-30 15:42:30.341 WebBasePage:31 - select device section
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-30 15:42:30.683 WebBasePage:31 - select device operation
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-30 15:42:31.614 WebBasePage:48 - scrolling for device
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-30 15:42:31.766 WebBasePage:31 - assign operation
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-30 15:42:32.032 WebBasePage:61 - Application Download
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-30 15:42:32.296 WebBasePage:31 - sent operation to right side
+[SeleniumWeb_ChromeDriver INFO ] 2022-12-30 15:42:32.441 WebBasePage:31 - assign operation

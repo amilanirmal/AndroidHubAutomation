@@ -1,8 +1,8 @@
 package com.qa.stepdef;
 
-import com.qa.pages.LoginPage;
-import com.qa.pages.ProductDetailsPage;
-import com.qa.pages.ProductsPage;
+import com.qa.example.LoginPage;
+import com.qa.example.ProductDetailsPage;
+import com.qa.example.ProductsPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

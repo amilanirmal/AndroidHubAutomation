@@ -23,6 +23,12 @@ public class TMSOperationPage extends WebBasePage {
     @FindBy(how = How.XPATH, using = "//table[@id='gridtable']//td[text() = 'V1E0181065']")
     private WebElement deviceX990;
 
+    @FindBy(how = How.XPATH, using = "//table[@id='gridtable1']//td[text() = 'V1E0181065']")
+    private WebElement deviceX990GridTable1;
+
+    @FindBy(how = How.XPATH, using = "//table[@id='gridtable1']//td[text() = 'V1E0181065']/following-sibling::td[6]")
+    private WebElement operationStatus;
+
     @FindBy(how = How.XPATH, using = "//*[@id=\"newListsp\"]//option[text()='ECHO Operation']")
     private WebElement echoOpe;
 

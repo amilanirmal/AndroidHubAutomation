@@ -18,4 +18,4 @@ Feature: TMS login scenarios
 
     Examples:
       | username | password |
-      | nirmal   | 654321   |
+      | nirmal   | 123456   |

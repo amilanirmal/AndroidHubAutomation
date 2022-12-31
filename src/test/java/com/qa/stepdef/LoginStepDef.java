@@ -1,8 +1,7 @@
 package com.qa.stepdef;
 
-import com.qa.pages.BasePage;
-import com.qa.pages.LoginPage;
-import com.qa.pages.ProductsPage;
+import com.qa.example.LoginPage;
+import com.qa.example.ProductsPage;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
