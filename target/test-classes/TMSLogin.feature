@@ -1,4 +1,4 @@
-@test2
+@b
 Feature: TMS login scenarios
 
   @web
@@ -15,7 +15,10 @@ Feature: TMS login scenarios
     And I select the device operation "Profile Download"
     And Send operation to right side
     And Click on assign
+    And close popup window
+    And scroll down for gride table one
+    Then Operation should be completed
 
     Examples:
       | username | password |
-      | nirmal   | 123456   |
+      | nirmal   | 654321    |

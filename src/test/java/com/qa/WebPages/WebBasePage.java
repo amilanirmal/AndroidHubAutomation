@@ -41,6 +41,12 @@ public class WebBasePage {
     {
         return webDriver.getTitle();
     }
+
+    public String getText(String msg)
+    {
+        String statusOperation = webDriver.findElement(By.xpath(msg)).getText();
+        return statusOperation;
+    }
     public void scrollDown(WebElement e, String txt) {
         JavascriptExecutor js = (JavascriptExecutor) webDriver;
         js.executeScript("arguments[0].scrollIntoView(true);",e);
@@ -60,5 +66,21 @@ public class WebBasePage {
         waitForVisibility(operation);
         utils.log().info(msg);
         operation.click();
+    }
+
+    public String xpathConcat(String msg1,String msg2,String msg3) {
+        StringBuilder s1 = new StringBuilder(msg1);
+        StringBuilder s2 = new StringBuilder(msg2);
+        StringBuilder s3 = new StringBuilder(msg3);
+
+        StringBuilder s4 = s1.append(s2);
+        StringBuilder s5 = s4.append(s3);
+        return s5.toString();
+
+    }
+
+    public void close(String msg) {
+        webDriver.close();
+        utils.log().info(msg);
     }
 }

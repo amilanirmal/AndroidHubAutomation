@@ -1,13 +1,13 @@
-[Android_X990 INFO ] 2022-12-30 15:02:33.307 ServerManager:20 - starting appium server
-[Android_X990 INFO ] 2022-12-30 15:02:37.772 ServerManager:29 - Appium server started
-[Android_X990 INFO ] 2022-12-30 15:02:37.803 DriverManager:46 - initializing Appium driver
-[Android_X990 INFO ] 2022-12-30 15:02:37.826 PropertyManager:17 - loading config properties
-[Android_X990 INFO ] 2022-12-30 15:02:37.828 CapabilitiesManager:18 - getting capabilities
-[Android_X990 INFO ] 2022-12-30 15:02:37.842 CapabilitiesManager:34 - appUrl isD:\BMLAutomation\AndroidHubAutomation\src\test\resources\apps\BML_X990_V214_V2.57.apk
-[Android_X990 INFO ] 2022-12-30 15:03:19.320 DriverManager:58 - Driver is initialized
-[Android_X990 INFO ] 2022-12-30 15:03:21.424 BasePage:53 - press login button
-[Android_X990 INFO ] 2022-12-30 15:03:23.503 BasePage:53 - press edit table
-[Android_X990 INFO ] 2022-12-30 15:03:25.887 BasePage:53 - click OK
-[Android_X990 INFO ] 2022-12-30 15:03:28.061 BasePage:53 - click on table drop down
-[Android_X990 INFO ] 2022-12-30 15:03:29.612 BasePage:53 - Select TCT table
-[Android_X990 INFO ] 2022-12-30 15:04:38.303 VideoManager:35 - video path: Android_X990\Videos\Edit table and add tmsurl ,appcode.mp4
+[Android_X990 INFO ] 2023-01-01 20:44:17.002 ServerManager:20 - starting appium server
+[Android_X990 INFO ] 2023-01-01 20:44:35.340 ServerManager:29 - Appium server started
+[Android_X990 INFO ] 2023-01-01 20:44:35.370 DriverManager:46 - initializing Appium driver
+[Android_X990 INFO ] 2023-01-01 20:44:35.395 PropertyManager:17 - loading config properties
+[Android_X990 INFO ] 2023-01-01 20:44:35.397 CapabilitiesManager:18 - getting capabilities
+[Android_X990 INFO ] 2023-01-01 20:44:35.400 CapabilitiesManager:34 - appUrl isD:\BMLAutomation\AndroidHubAutomation\src\test\resources\apps\BML_X990_V214_V2.57.apk
+[Android_X990 INFO ] 2023-01-01 20:45:14.822 DriverManager:58 - Driver is initialized
+[Android_X990 INFO ] 2023-01-01 20:45:17.805 BasePage:53 - press login button
+[Android_X990 INFO ] 2023-01-01 20:45:19.077 BasePage:53 - press edit table
+[Android_X990 INFO ] 2023-01-01 20:45:21.404 BasePage:53 - click OK
+[Android_X990 INFO ] 2023-01-01 20:45:23.749 BasePage:53 - click on table drop down
+[Android_X990 INFO ] 2023-01-01 20:45:24.978 BasePage:53 - Select TCT table
+[Android_X990 INFO ] 2023-01-01 20:46:24.680 VideoManager:35 - video path: Android_X990\Videos\Edit table and add tmsurl ,appcode.mp4

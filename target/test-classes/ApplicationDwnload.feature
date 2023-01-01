@@ -1,4 +1,4 @@
-@test3
+@c
 Feature: TMS Application download
 
   @web
@@ -15,7 +15,10 @@ Feature: TMS Application download
     And I select the device operation "Application Download"
     And Send operation to right side
     And Click on assign
+    And scroll down for gride table one
+    Then Operation should be completed
+
 
     Examples:
       | username | password |
-      | nirmal   | 123456   |
+      | nirmal   | 654321   |

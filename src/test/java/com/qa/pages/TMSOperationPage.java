@@ -2,9 +2,13 @@ package com.qa.pages;
 
 import com.qa.WebPages.WebBasePage;
 import com.qa.utils.TestUtils;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
+
+import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class TMSOperationPage extends WebBasePage {
     TestUtils utils = new TestUtils();
@@ -20,11 +24,17 @@ public class TMSOperationPage extends WebBasePage {
     @FindBy(how = How.XPATH, using = "//table[@id='gridtable']//td[text() = 'V1E0181065']/following-sibling::td[6]")
     private WebElement assignOperation;
 
+    @FindBy(how = How.XPATH, using = "")
+    private WebElement closeOperationWindow;
+
     @FindBy(how = How.XPATH, using = "//table[@id='gridtable']//td[text() = 'V1E0181065']")
     private WebElement deviceX990;
 
     @FindBy(how = How.XPATH, using = "//table[@id='gridtable1']//td[text() = 'V1E0181065']")
     private WebElement deviceX990GridTable1;
+
+    @FindBy(how = How.XPATH, using = "//span[@id='ui-id-1']/ancestor::div[1]/a/span[text()='close']")
+    private WebElement closeBtnOperationPopup;
 
     @FindBy(how = How.XPATH, using = "//table[@id='gridtable1']//td[text() = 'V1E0181065']/following-sibling::td[6]")
     private WebElement operationStatus;
@@ -49,6 +59,8 @@ public class TMSOperationPage extends WebBasePage {
 
     @FindBy(how = How.XPATH, using = "//input[@id='assignbutasp']")
     private WebElement assignBtn;
+
+
 
 
     public TMSOperationPage()
@@ -97,6 +109,38 @@ public class TMSOperationPage extends WebBasePage {
     public TMSOperationPage assignedOperation(String msg) throws InterruptedException {
         click(assignBtn,msg);
         Thread.sleep(5000);
+        return this;
+    }
+    public TMSOperationPage  closeWindow(String msg) throws InterruptedException {
+
+        click(closeBtnOperationPopup,msg);
+        Thread.sleep(5000);
+        return this;
+    }
+
+
+
+    public TMSOperationPage scrollForGridTable1() throws InterruptedException
+    {
+        scrollDown(deviceX990GridTable1,"scrolling for device");
+        waitForVisibility(deviceX990GridTable1);
+        return this;
+    }
+
+    public TMSOperationPage operationStatusChecker() throws InterruptedException
+    {
+        String operationStat = getText("//table[@id='gridtable1']//td[text() = 'V1E0181065']/following-sibling::td[6]");
+
+
+        if(operationStat.equalsIgnoreCase("Completed"))
+        {
+            utils.log().info("Device Operation Completed");
+
+        }else
+        {
+            Thread.sleep(10000);
+            operationStatusChecker();
+        }
         return this;
     }
 

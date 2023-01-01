@@ -1,4 +1,4 @@
-@test
+@a
 Feature: Edit table TCT
 
   @appium

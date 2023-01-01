@@ -45,5 +45,18 @@ public class DeviceOpDef {
         new TMSOperationPage().assignedOperation("assign operation");
     }
 
+    @And("close popup window")
+    public void closePopupWindow() throws InterruptedException {
+        new TMSOperationPage().closeWindow("Close current pop up");
+    }
+    @And("^scroll down for gride table one$")
+    public void scrollDownForGrideTable() throws InterruptedException{
+        new TMSOperationPage().scrollForGridTable1();
+    }
+
+    @Then("Operation should be completed")
+    public void operationShouldBeCompleted() throws InterruptedException{
+        new TMSOperationPage().operationStatusChecker();
+    }
 
 }
