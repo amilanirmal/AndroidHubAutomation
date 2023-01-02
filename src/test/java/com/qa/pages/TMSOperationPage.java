@@ -81,8 +81,9 @@ public class TMSOperationPage extends WebBasePage {
         click(deviceOpManagement,msg);
         return this;
     }
-    public TMSOperationPage verifyDevice()
+    public TMSOperationPage verifyDevice()throws InterruptedException
     {
+        Thread.sleep(5000);
         scrollDown(deviceX990,"scrolling for device");
         waitForVisibility(deviceX990);
         return this;
@@ -94,9 +95,10 @@ public class TMSOperationPage extends WebBasePage {
         return this;
     }
 
-    public TMSOperationPage selectOperation(String msg)
+    public TMSOperationPage selectOperation(String msg) throws InterruptedException
     {
-        deviceOperationCommonMethod(msg);
+        //click(profileDwnload,msg);
+       deviceOperationCommonMethod(msg);
         return this;
     }
 
@@ -122,6 +124,7 @@ public class TMSOperationPage extends WebBasePage {
 
     public TMSOperationPage scrollForGridTable1() throws InterruptedException
     {
+        Thread.sleep(5000);
         scrollDown(deviceX990GridTable1,"scrolling for device");
         waitForVisibility(deviceX990GridTable1);
         return this;
@@ -139,6 +142,8 @@ public class TMSOperationPage extends WebBasePage {
         }else
         {
             Thread.sleep(10000);
+            refresh("refresh browser");
+            scrollForGridTable1();
             operationStatusChecker();
         }
         return this;

@@ -54,18 +54,18 @@ public class WebBasePage {
         utils.log().info(txt);
     }
 
-    public void deviceOperationCommonMethod(String msg) {
-        StringBuilder s1 =new StringBuilder("//*[@id=\"newListsp\"]//option[text()='");
+    public void deviceOperationCommonMethod(String msg) throws InterruptedException{
+        StringBuilder s1 =new StringBuilder("//select[@id=\"newListsp\"]//option[text()=\"");
         StringBuilder s2 =new StringBuilder(msg);
-        StringBuilder s3 =new StringBuilder("']");
+        StringBuilder s3 =new StringBuilder("\"]");
 
         StringBuilder s4 = s1.append(s2);
         StringBuilder s5 = s4.append(s3);
 
-        WebElement operation =webDriver.findElement(By.xpath(s5.toString()));
+        WebElement operation = webDriver.findElement(By.xpath(s5.toString()));
         waitForVisibility(operation);
         utils.log().info(msg);
-        operation.click();
+        click(operation,msg);
     }
 
     public String xpathConcat(String msg1,String msg2,String msg3) {
@@ -81,6 +81,10 @@ public class WebBasePage {
 
     public void close(String msg) {
         webDriver.close();
+        utils.log().info(msg);
+    }
+    public void refresh(String msg) {
+        webDriver.navigate().refresh();
         utils.log().info(msg);
     }
 }

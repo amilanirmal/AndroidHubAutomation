@@ -21,7 +21,7 @@ public class DeviceOpDef {
 
     }
     @And("^I verify device on Boarding$")
-    public void iVerifyDeviceOnBoarding() {
+    public void iVerifyDeviceOnBoarding() throws InterruptedException {
         new TMSOperationPage().verifyDevice();
     }
     @And("^I click on assign operation$")
@@ -31,7 +31,7 @@ public class DeviceOpDef {
 
     }
     @And("^I select the device operation \"([^\"]*)\"$")
-    public void iSelectTheDeviceOperation(String arg0) {
+    public void iSelectTheDeviceOperation(String arg0) throws InterruptedException{
         new TMSOperationPage().selectOperation(arg0);
     }
 
