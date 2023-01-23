@@ -1,17 +1,19 @@
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:13.695 WebBasePage:38 - nirmal
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:13.883 WebBasePage:38 - 123456
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:13.919 WebBasePage:31 - enter submit
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:15.493 WebBasePage:31 - extract the left side bar
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:16.201 WebBasePage:31 - select device section
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:16.638 WebBasePage:31 - select device operation
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:24.302 WebBasePage:54 - scrolling for device
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:24.379 WebBasePage:31 - assign operation
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:24.570 WebBasePage:67 - Profile Download
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:24.585 WebBasePage:31 - Profile Download
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:24.707 WebBasePage:31 - sent operation to right side
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:24.893 WebBasePage:31 - assign operation
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:30.044 WebBasePage:31 - Close current pop up
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:40.228 WebBasePage:54 - scrolling for device
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:54.187 WebBasePage:88 - refresh browser
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:59.275 WebBasePage:54 - scrolling for device
-[SeleniumWeb_ChromeDriver INFO ] 2023-01-02 09:59:59.321 TMSOperationPage:140 - Device Operation Completed
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:39:41.301 WebBasePage:38 - nirmal
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:39:41.436 WebBasePage:38 - 654321
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:39:41.483 WebBasePage:31 - enter submit
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:39:48.985 WebBasePage:31 - extract the left side bar
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:39:49.663 WebBasePage:31 - select device section
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:39:51.250 WebBasePage:31 - select device operation
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:40:06.352 WebBasePage:54 - scrolling for device
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:40:06.459 WebBasePage:31 - assign operation
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:40:11.875 WebBasePage:66 - Profile Download
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:40:11.908 WebBasePage:31 - Profile Download
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:40:12.055 WebBasePage:31 - sent operation to right side
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:40:12.182 WebBasePage:31 - assign operation
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:40:17.361 WebBasePage:31 - Close current pop up
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:40:27.582 WebBasePage:54 - scrolling for device
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:40:43.643 WebBasePage:87 - refresh browser
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:40:48.762 WebBasePage:54 - scrolling for device
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:41:04.174 WebBasePage:87 - refresh browser
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:41:09.307 WebBasePage:54 - scrolling for device
+[SeleniumWeb_ChromeDriver INFO ] 2023-01-20 21:41:09.363 TMSOperationPage:141 - Device Operation Completed

@@ -63,7 +63,6 @@ public class WebBasePage {
         StringBuilder s5 = s4.append(s3);
 
         WebElement operation = webDriver.findElement(By.xpath(s5.toString()));
-        waitForVisibility(operation);
         utils.log().info(msg);
         click(operation,msg);
     }

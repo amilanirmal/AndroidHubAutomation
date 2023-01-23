@@ -98,6 +98,7 @@ public class TMSOperationPage extends WebBasePage {
     public TMSOperationPage selectOperation(String msg) throws InterruptedException
     {
         //click(profileDwnload,msg);
+        Thread.sleep(5000);
        deviceOperationCommonMethod(msg);
         return this;
     }
